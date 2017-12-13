@@ -1,0 +1,59 @@
+{
+  "IamFleetRole": "arn:aws:iam::<account>:role/aws-ec2-spot-fleet-tagging-role",
+  "AllocationStrategy": "lowestPrice",
+  "TargetCapacity": 1,
+  "SpotPrice": "0.9",
+  "ValidFrom": "2017-11-11T02:58:39Z",
+  "ValidUntil": "2018-11-11T02:58:39Z",
+  "TerminateInstancesWithExpiration": true,
+  "InstanceInterruptionBehavior": "stop",
+  "Type": "maintain",
+  "LaunchSpecifications": [
+    {
+      "ImageId": "ami-9ba7c4e1",
+      "InstanceType": "p2.xlarge",
+      "KeyName": "YOUR_KEY.pem",
+      "SpotPrice": "0.9",
+      "IamInstanceProfile": {
+        "Arn": "arn:aws:iam::<account>:instance-profile/<IAM Role>"
+      },
+      "BlockDeviceMappings": [
+        {
+          "DeviceName": "/dev/xvda",
+          "Ebs": {
+            "DeleteOnTermination": true,
+            "VolumeType": "gp2",
+            "VolumeSize": 50,
+            "SnapshotId": "snap-0848820a1c25e0ece"
+          }
+        }
+      ],
+      "NetworkInterfaces": [
+        {
+          "DeviceIndex": 0,
+          "SubnetId": "subnet-12345678",
+          "DeleteOnTermination": true,
+          "Groups": [
+            "sg-123456"
+          ],
+          "AssociatePublicIpAddress": true
+        }
+      ],
+      "TagSpecifications": [
+        {
+          "ResourceType": "instance",
+          "Tags": [
+            {
+              "Key": "Key1",
+              "Value": "Value1"
+            },
+            {
+              "Key": "Key2",
+              "Value": "Value2"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

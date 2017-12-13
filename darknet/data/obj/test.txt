@@ -1,0 +1,10 @@
+data/obj/stopsign_00047.jpg
+data/obj/stopsign_00035.jpg
+data/obj/stopsign_00026.jpg
+data/obj/stopsign_00048.jpg
+data/obj/stopsign_00020.jpg
+data/obj/stopsign_00076.jpg
+data/obj/stopsign_00002.jpg
+data/obj/stopsign_00055.jpg
+data/obj/stopsign_00085.jpg
+data/obj/stopsign_00081.jpg
