@@ -1,12 +1,12 @@
 # self-driving-car
 Train camera to recognize traffic signs
 
-#Videos
+# Videos
 2 mins video: https://youtu.be/UJocvtM0dww
 
 15 mins video: 
 
-#Credits
+# Credits
 
 darknet/ clone from https://github.com/AlexeyAB/darknet
 
