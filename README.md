@@ -2,6 +2,8 @@
 Train camera to recognize traffic signs
 
 # Videos
+[![Watch the video](https://i9.ytimg.com/vi/dLJduPXZDYY/1.jpg?sqp=CJC9zNEF&rs=AOn4CLCXsZFtJTqyIgNp0KUz_9a63Mu_tA)](https://youtu.be/dLJduPXZDYY)
+
 2 mins video: https://youtu.be/UJocvtM0dww
 
 15 mins video: https://youtu.be/AM5LwgdFsW4
